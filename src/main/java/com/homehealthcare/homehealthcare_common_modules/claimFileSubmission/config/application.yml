@@ -1,0 +1,63 @@
+file-claim:
+  library: # Configuration-level data for claims
+    isa-auth-info-qualifier: "00"
+    isa-auth-info: "          "
+    isa-security-info-qualifier: "00"
+    isa-security-info: "          "
+    isa-interchange-id-qualifiers:
+      - "ZZ"
+      - "01"
+      - "08"
+    isa-interchange-sender-id: "SENDER_ID"
+    isa-interchange-receiver-id: "RECEIVER_ID"
+    gs-functional-identifier-code: "HC"
+    gs-application-sender-code: "APP_SENDER_CODE"
+    gs-application-receiver-code: "APP_RECEIVER_CODE"
+    submitter-name: "Submitter Organization"
+    submitter-contact-emails:
+      - "email1@example.com"
+      - "email2@example.com"
+    receiver-name: "Receiver Organization"
+
+  data: # Data-driven fields for claim entities
+    isa-auth-info: "          "
+    isa-security-info: "          "
+    isa-interchange-id-qualifiers:
+      - "ZZ"
+      - "01"
+      - "08"
+    isa-interchange-sender-id: "SENDER_ID"
+    isa-interchange-receiver-id: "RECEIVER_ID"
+    gs-functional-identifier-code: "HC"
+    gs-application-sender-code: "APP_SENDER_CODE"
+    gs-application-receiver-code: "APP_RECEIVER_CODE"
+    submitter-name: "Submitter Organization"
+    submitter-contact-emails:
+      - "email1@example.com"
+      - "email2@example.com"
+    receiver-name: "Receiver Organization"
+    provider: # Provider-specific details
+      name: "Provider Organization"
+      npi: "PROVIDER_NPI"
+      address:
+        line: "123 Main St"
+        city: "CityName"
+        state: "StateCode"
+        zip: "12345"
+    subscriber: # Subscriber-specific details
+      name: "Subscriber Name"
+      id: "SUBSCRIBER_ID"
+      address:
+        line1: "456 Elm St"
+        city: "AnotherCity"
+        state: "AnotherState"
+        zip: "67890"
+    payer: # Payer-specific details
+      name: "Payer Organization"
+      id: "PAYER_ID"
+      # Optional: Add an address structure if required for consistency
+      # address:
+      #   line: "789 Maple St"
+      #   city: "CityName"
+      #   state: "StateCode"
+      #   zip: "11223"
